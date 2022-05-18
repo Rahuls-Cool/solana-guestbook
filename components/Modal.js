@@ -18,13 +18,13 @@ const Modal = ( {setShowModal}) => {
                 <form className="space-y-6" action="#">
                     <div>
                         <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Name</label>
-                        <input type="text" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg drop-shadow-lg  block w-full p-2.5 focus:ring-orange-500 focus:border-orange-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="John Doe" required/>
+                        <input type="text" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg drop-shadow-lg  block w-full p-2.5 focus:ring-orange-300 focus:border-orange-300  dark:focus:ring-orange-500 dark:focus:border-orange-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="John Doe" required/>
                     </div>
                     <div>
                         <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your Message</label>
                 
                         <textarea
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 drop-shadow-lg dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-300 focus:border-orange-300 dark:focus:ring-orange-500 dark:focus:border-orange-500 block w-full p-2.5 drop-shadow-lg dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                   placeholder="Enter your message here..."
                   required
               ></textarea>

@@ -7,10 +7,10 @@ const signin = () => {
                 <div>
                   <h1 className="subtitle p-8">Sign In!</h1>
                     <div className="p-5"> 
-                      <input className="inputs" placeholder="Username"></input>
+                      <input className="inputs" type="text" placeholder="Username" />
                     </div>
                     <div className="p-5">
-                        <input className="inputs" type="password" placeholder="Password"></input>
+                        <input className="inputs" type="password" placeholder="Password" />
                     </div>
                     <div className="p-3 flex flex-row space-x-2 place-content-center">
                         <Link href="/">
