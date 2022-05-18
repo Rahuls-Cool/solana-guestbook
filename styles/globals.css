@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+
+:root {
+  --bg-color: #111827;
+}
+
+
+body {
+  background-color:var(--bg-color);
+}
+
+.show-img {
+  display: block;
+  border-radius: 20px 20px 0px 0px;
+
+  /* Use this whe you don't want it to show and ready for revel*/
+
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  filter: blur(10px);
+}
+
+.show-text {
+  width: 400px;
+  position: relative;
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  filter: blur(10px);
+}
+
+.bg-off {
+  position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+@layer components {
+
+  @font-face {
+    font-family: "Didact Gothic";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/DidactGothic-Regular.woff") format("woff");
+  }
+
+
+  .title {
+    @apply text-5xl lg:text-6xl xl:text-7xl font-bold font-Didact_Gothic;
+  }
+  .subtitle {
+    @apply mt-3 text-3xl lg:text-4xl font-Didact_Gothic;
+  }
+  .headline {
+    @apply text-6xl mt-3 mb-3 font-bold font-Didact_Gothic;
+  }
+.inputs {
+  @apply rounded-lg py-2 px-4 dark:bg-slate-700 dark:text-white drop-shadow-xl font-Didact_Gothic; 
+}
+.btn {
+  @apply rounded-md bg-orange-300 shadow-xl shadow-orange-300/50 dark:bg-orange-500 p-2 px-4 dark:shadow-orange-500/50 font-Didact_Gothic;
+}
+
+.fonds {
+  @apply font-Didact_Gothic;
+}
+
+}
