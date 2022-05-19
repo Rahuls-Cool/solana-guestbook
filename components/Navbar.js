@@ -44,10 +44,6 @@ export default function Nav() {
             >Contact</button>
           </li>
 
-            {showModal? (
-                <Modal setShowModal= {setShowModal} />
-            ): null}
-
           <li>
             <button
               onClick={() => {
@@ -60,6 +56,9 @@ export default function Nav() {
             </button>
           </li>
         </ul>
+        {showModal? (
+                <Modal setShowModal= {setShowModal} />
+            ): null}
       </ul>
     </nav>
   );
