@@ -1,12 +1,19 @@
 import "../styles/globals.css";
 
-import { ThemeProvider } from "next-themes";
+import { CssBaseline,GeistProvider } from '@geist-ui/core'
+// import { ThemeProvider } from "next-themes";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider defaultTheme="system" attribute="class">
+
+    <GeistProvider>
+      <CssBaseline/>
+        {/* <ThemeProvider defaultTheme="system" attribute="class"> */}
       <Component {...pageProps} />
-    </ThemeProvider>
+    {/* </ThemeProvider> */}
+    </GeistProvider>
+    
+
   );
 }
 

@@ -1,15 +1,15 @@
 import Head from "next/head";
 
 export default function Meta({ title }) {
-  const siteTitle = "Cox Mill Hack Club";
-  const description = "Cox Mill High School Hackclub Website";
-  const keywords = "Hackclub Cox mill";
+  const siteTitle = "Rahul's GuestBook";
+  const description = "Using Solana Blockchain to record guestbook entries";
+  const keywords = "Rahul's GuestBook";
   const author = "Rahul";
   const twitter = "@Rahuls_Coding";
   const themeColor = "#ffffff";
   const darkThemeColor = "#131828";
-  const image =
-    "https://i.ibb.co/PjgVdGH/Group-1-1.png";
+  const image = "https://i.ibb.co/3kKGYt2/Rocket.png";
+
   return (
     <Head>
       <meta charSet="utf-8" />

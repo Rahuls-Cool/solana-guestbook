@@ -4,14 +4,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 :root {
   --bg-color: #111827;
 }
 
+h1{
+  font-family: "DM Sans", sans-serif;
+}
 
+.font-didact {
+  font-family: 'Didact Gothic', sans-serif;
+}
 body {
-  background-color:var(--bg-color);
+  
+  font-family: 'Didact Gothic', sans-serif;
 }
 
 .show-img {
@@ -53,23 +60,20 @@ body {
 
 
   .title {
-    @apply text-5xl lg:text-6xl xl:text-7xl font-bold font-Didact_Gothic;
+    @apply text-5xl lg:text-6xl xl:text-7xl font-bold ;
   }
   .subtitle {
-    @apply mt-3 text-3xl lg:text-4xl font-Didact_Gothic;
+    @apply mt-3 text-3xl lg:text-4xl ;
   }
   .headline {
-    @apply text-6xl mt-3 mb-3 font-bold font-Didact_Gothic;
+    @apply text-6xl mt-3 mb-3 font-bold ;
   }
 .inputs {
-  @apply rounded-lg py-2 px-4 dark:bg-slate-700 dark:text-white drop-shadow-xl font-Didact_Gothic focus:ring-orange-300 focus:border-orange-300  dark:focus:ring-orange-500 dark:focus:border-orange-500 border-white dark:border-gray-700; 
+  @apply rounded-lg py-2 px-4 dark:bg-slate-700 dark:text-white drop-shadow-xl  focus:ring-orange-300 focus:border-orange-300  dark:focus:ring-orange-500 dark:focus:border-orange-500 border-white dark:border-gray-700; 
 }
 .btn {
-  @apply rounded-md bg-orange-300 shadow-xl shadow-orange-300/50 dark:bg-orange-500 p-2 px-4 dark:shadow-orange-500/50 font-Didact_Gothic;
+  @apply rounded-md bg-orange-300 shadow-xl shadow-orange-300/50 dark:bg-orange-500 p-2 px-4 dark:shadow-orange-500/50 ;
 }
 
-.fonds {
-  @apply font-Didact_Gothic;
-}
 
 }
