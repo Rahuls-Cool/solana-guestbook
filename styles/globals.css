@@ -51,13 +51,6 @@ body {
 
 @layer components {
 
-  @font-face {
-    font-family: "Didact Gothic";
-    font-style: normal;
-    font-weight: 400;
-    src: url("/fonts/DidactGothic-Regular.woff") format("woff");
-  }
-
 
   .title {
     @apply text-5xl lg:text-6xl xl:text-7xl font-bold ;
