@@ -104,12 +104,11 @@ const App = () => {
   
   const getProvider = () => {
     const connection = new Connection(network, opts.preflightCommitment);
-    const provider = new Provider (
+    const provider = new Provider(
       connection, window.solana, opts.preflightCommitment,
     );
     return provider;
   }
-
 
   const onSubmit = () => {
     const waladd = shortString(walletAddress, 6)
@@ -157,7 +156,7 @@ useEffect( () => {
 
 useEffect(() => {
   if (walletAddress) {
-    console.log('Fetching GIF list...');
+    console.log('Fetching Wallet, Mesage, Date list...');
     getTableLists()
   }
 }, [walletAddress]);
